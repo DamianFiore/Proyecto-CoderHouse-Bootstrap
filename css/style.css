@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-size: cover;
+}
+/*HEADER*/
+header{
+    display: grid;
+    grid-template-areas: 
+    "logo nombre imagen1 carrito inicio perfil"
+    "logo nombre imagen1 carrito inicio perfil"
+    "logo nombre imagen1 carrito inicio perfil"
+    "logo nombre imagen1 google google google"
+    "logo nombre imagen1 google google google";
+
+    grid-template-columns: 180px 230px 550px 100px 220px 60px;
+    grid-template-rows: repeat(5, 30px);
+}
+section#logo{
+    grid-area: logo;
+    align-self: center;
+    justify-self: center;
+}
+section#nombre{
+    grid-area: nombre;
+    align-self: center;
+    animation: zoomInUp;
+    animation-duration: 2s;
+}
+section#imagen1{
+    grid-area: imagen1;
+    align-self: center;
+}
+section#imagen1:hover {
+    transform: rotateX(360deg);
+    transition: all 4s;
+}
+section#carrito{
+    grid-area: carrito;
+    align-self: center;
+    justify-self: center;
+}
+section#inicio{
+    grid-area: inicio;
+    align-self: center;
+    justify-self: end;
+    font-family: 'Merriweather', serif;
+    font-size: 5px;
+}
+section#perfil{
+    grid-area: perfil;
+    align-self: center;
+    justify-self: center;
+}
+section#google{
+    grid-area: google;
+    justify-self: flex-end;
+    align-self: flex-end;
+}
+
+/*NAV*/
+.dropdown-menu{
+    width: 100%;
+    text-align: center;
+}
+
+.galeriamain{
+padding-left: 475px;
+}
+.maincontacto{
+    padding-left: 550px;
+    padding-right: 550px;
+}
+iframe{
+    margin-left: 30%;
+    padding: 15px;
+}
+h1{
+    font-size: 75px;
+    font-family: 'Dancing Script', cursive;
+}
+p{
+    font-family: 'Merriweather', serif;
+}
